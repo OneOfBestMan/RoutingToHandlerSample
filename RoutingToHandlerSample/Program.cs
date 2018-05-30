@@ -20,7 +20,7 @@ namespace RoutingToHandlerSample
             return new WebHostBuilder()
                 .UseConfiguration(config)
                 .UseKestrel()
-                .UseStartup<Startup>();
+                .UseStartup<StartupWithMiddleware>();
         }
     }
 }
